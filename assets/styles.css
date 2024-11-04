@@ -1,0 +1,33 @@
+/* Univerzalni selektor */
+*{
+    background-color: rgb(26, 68, 85);
+}
+
+/* Element selektor */
+/* h1{
+    color: honeydew;
+} */
+
+/* Class selektror */
+.prvi {
+    color: azure;
+}
+.drugi {
+    color: burlywood;
+}
+.treci {
+    color: orchid;
+}
+
+/* ID selector */
+#cetvrti{
+    color: crimson;
+}
+
+/* atribut selector */
+p[draggable="true"]{
+    color: aliceblue;
+}
+p[draggable="false"]{
+    color: floralwhite;
+}
