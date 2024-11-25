@@ -1,0 +1,19 @@
+*{
+    background-color: black;
+    
+}
+h1{
+text-transform: uppercase;
+}
+div{
+    text-align: center;
+    color: white;
+    width: 50%;
+    margin-left: 25%;
+    margin-top: 150px;
+}
+img{
+    border: solid white;
+    border-width: 5px;
+    width: 100%;
+}
