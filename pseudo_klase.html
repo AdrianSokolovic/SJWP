@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo klase</title>
+    <style>
+       
+        .d{
+            height: 200px;
+            width: 200px;
+            background-color: crimson;
+            position: absolute;
+            transition: 1s;
+            transform-origin: top left;
+        }
+        .t{
+            position: absolute;
+            left: 200px;
+            height: 200px;
+            width: 200px;
+            transition: 1s;
+            background-color: yellow;
+            transform-origin: top right;
+        }
+        .c{
+            position: absolute;
+            top: 275px;
+            height: 200px;
+            width: 200px;
+            transition: 1s;
+            background-color: blue;
+            
+            
+            transform-origin: left bottom;
+        }
+        .pe{
+            top: 275px;
+            left: 200px;
+            position: absolute;
+            height: 200px;
+            width: 200px;
+            transition: 1s;
+            background-color: green;
+            
+            
+            transform-origin: bottom right;
+        }
+        div:hover {
+            
+            transform: rotate(90deg);
+            
+        }
+        a:link{
+            color: red;
+        }
+        a:visited{
+            color: chartreuse;
+        }
+        a:hover{
+            color: aqua;
+        }
+        a:active{
+            color: darkmagenta;
+        }
+    </style>
+</head>
+<body>
+    <h3>Pseudo klase</h3>
+    <a href="https://net.hr/">Stranica škole</a>
+    
+        <div class="d"> </div>
+        <div class="t"> </div>
+        <div class="c"> </div>
+        <div class="pe"> </div>
+         
+    
+</body>
+</html>
