@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GRID VJEZBA</title>
+    <style>
+        *{
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 2.5rem;
+            box-sizing: border-box;
+        }
+        .container_a{
+            width: 80%;
+            height: 1000px;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+            gap: 2rem;
+            border: 1px solid black;
+            padding: 20px;
+        }
+        .box_a{
+            /* width: 300px;
+            height: 200px; */
+            border-radius: 9px;
+            background-color: grey;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: aliceblue;
+        }
+/* Zad2 */
+        .container_b{
+            width: 80%;
+            height: 1000px;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+            gap: 2rem;
+            border: 1px solid black;
+            padding: 20px;
+            margin-top: 250px;
+        }
+        .box_b{
+            border-radius: 9px;
+            background-color: grey;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: aliceblue;
+        }
+        .c{
+            order: 6;
+        }
+        .b{
+            order: 5;
+        }
+        .e{
+            order: 4;
+        }
+        .f{
+            order: 3;
+        }
+        .a{
+            order: 2;
+        }
+        .d{
+            order: 1;
+        }
+        /* Zad3 */
+        .aa{
+            grid-column:span 2;
+        }
+        .bb{
+            grid-row:span 2 ;
+        }
+        /* Zad5 */
+        .container_c{
+            width: 80%;
+            height: 1000px;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr 1fr;
+            gap: 2rem;
+            border: 1px solid black;
+            padding: 20px;
+            margin-top: 250px;
+        }
+        .box_c{
+            border-radius: 9px;
+            background-color: grey;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: aliceblue;
+        }
+        .aaa, .bbb{
+            grid-column: span 2;
+        }
+        .ddd{
+            grid-column: span 3;
+        }
+        .eee{
+            grid-column: span 4;
+        }
+        /* Zad6 */
+        .container_d{
+            width: 80%;
+            height: 1000px;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+            gap: 2rem;
+            border: 1px solid black;
+            padding: 20px;
+            margin-top: 250px;
+        }
+        .aaaa{
+            order: 1;
+            grid-column: span 2;
+        }
+        .bbbb{
+            order: 2;
+            grid-row: span 2;
+        }
+        .eeee{
+            order: 3;
+            grid-row: span 2;
+        }
+        .cccc{
+            order: 4;
+        }
+        .dddd{
+            order: 5;
+        }
+    </style>
+</head>
+<body>
+    <!-- ZAd 1 -->
+    <div class="container_a">
+        <div class="box_a">A</div>
+        <div class="box_a">B</div>
+        <div class="box_a">C</div>
+        <div class="box_a">D</div>
+        <div class="box_a">E</div>
+        <div class="box_a">F</div>
+    </div>
+<!-- Zad2 -->
+    <div class="container_b">
+        <div class="box_b a">A</div>
+        <div class="box_b b">B</div>
+        <div class="box_b c">C</div>
+        <div class="box_b d">D</div>
+        <div class="box_b e">E</div>
+        <div class="box_b f">F</div>
+    </div>
+<!-- Zad3 -->
+<div class="container_b">
+    <div class="box_b aa">A</div>
+    <div class="box_b bb">B</div>
+    <div class="box_b cc">C</div>
+    <div class="box_b dd">D</div>
+</div>
+<!-- Zad5 -->
+<div class="container_c">
+    <div class="box_c aaa">A</div>
+    <div class="box_c bbb">B</div>
+    <div class="box_c ccc">C</div>
+    <div class="box_c ddd">D</div>
+    <div class="box_c eee">E</div>
+</div>
+<!-- Zad6 -->
+<div class="container_d">
+    <div class="box_c aaaa">A</div>
+    <div class="box_c bbbb">B</div>
+    <div class="box_c cccc">C</div>
+    <div class="box_c dddd">D</div>
+    <div class="box_c eeee">E</div>
+</div>
+</body>
+</html>

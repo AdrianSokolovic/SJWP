@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zad7</title>
+    <style>
+        *{
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 2.5rem;
+            box-sizing: border-box;
+        }
+        .container_e{
+            width: 80%;
+            height: 500px;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            grid-template-rows: 1fr 2fr 1fr 1fr;
+            gap: 1rem;
+            border: 1px solid black;
+            padding: 20px;
+            margin-top: 50px;
+        }
+        .box_e{
+            margin: 0;
+            padding: 0;
+            border-radius: 9px;
+            background-color: grey;
+            color: aliceblue;
+        }
+        .aaaaa{
+            grid-column: span 4;
+        }
+        .bbbbb{
+            background-color: bisque;
+        }
+        .ccccc{
+            grid-column: span 3;
+            background-color: bisque;
+        }
+        .ddddd{
+            grid-column: span 4;
+            background-color: lightgray;
+        }
+        .eeeee{
+            grid-column: span 4;
+            background-color: gainsboro;
+        }
+    </style>
+</head>
+<body>
+    <!-- Zad7 -->
+<div class="container_e">
+    <div class="box_e aaaaa"><p>Header</p></div>
+    <div class="box_e bbbbb"><p>Sidebar</p></div>
+    <div class="box_e ccccc"><p>Content</p><br><p>More content than we had before so this column is now quite tall.</p></div>
+    <div class="box_e ddddd"><p>Sidebar 2</p></div>
+    <div class="box_e eeeee"><p>Footer</p></div>
+</div>
+</body>
+</html>
