@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Ovo je stranica za 3. zadaću">
+    <meta name="author" content="Adrian Sokolović">
+    <title>Zadaća 5</title>
+    <style>
+*{
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+body{
+  margin: 20px;
+  padding: 0;
+  background-color: rgb(200, 240, 255);
+  }
+ /*Navigacijska traka*/
+.topnav {
+  margin: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px;
+}
+.nav_traka a {
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  margin: 30px;
+  margin-left: 0;
+}
+.nav_traka a:hover {
+  background-color: #ddd;
+  color: black;
+}
+.nav_traka a.active {
+  font-size: 23px;
+  font-weight: bold;
+}
+.nav_traka > a{
+  width: 150px;
+  font-size: large;
+  color: black;
+}
+.naslov{
+  color: rgb(250, 162, 246);
+  font-weight: bold;
+  margin: 0 20px 0 10px;
+  font-size:50px;
+  flex: 1 1 30%;
+}
+/*stranica*/
+.container{
+   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 20px;
+  gap: 20px;
+  margin-top: 50px;
+}
+.container .Naslov {
+  flex: 1 1 300px;
+}
+.container .Slika {
+  flex: 1 1 300px;
+  margin: 210px;
+  margin-top: 30px;
+}
+p{
+  font-size: x-large;
+}
+img{
+  width: 500px;
+  height: auto;
+  display: block;
+}
+.oBubbleIT{
+  font-size: 3rem;
+}
+</style>
+</head>
+<body>
+  <div class="topnav">
+    <h1 class="naslov">BubbleIT</h1>
+    <div class="nav_traka">
+      <a class="active" href="Naslovna.html">Naslovna</a>
+      <a href="Usluge.html">Usluge</a>
+      <a href="Galerija.html">Galerija</a>
+      <a href="Kontakt.html">Kontakt</a>
+    </div>
+  </div><br>
+      <div class="container">
+        <div class="Naslov"><h1 class="oBubbleIT">O nama</h1><br><p>Prvi bubble u Hrvatskoj koji je pokrenuo trend izrade poklona od balona. BubbleIT je obrt koji naglasak stavlja na kreativnost i inovativnost. BubbleIT se bavi izradom prema narudžbi proizvoda i dekora od bubble balona.</p>
+          <p>Bubble baloni su baloni izrađeni od posebnog PVC materijala koji osigurava dugotrajnost i prozirnost kako bi bili punjeni raznim personaliziranim stvarima za vaše posebne trenutke. Za sve detalje obratiti nam se možete porukom ili na mail.</p></div>
+        <div class="Slika"><img src="bubbleIT.jpeg" alt="BubbleIT logo"></div>
+      </div>
+</body>
+</html>
