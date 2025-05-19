@@ -74,6 +74,30 @@ img{
 .Facebook{
   height: 60px;
 }
+/*Forma*/
+.button{
+  width: 150px;
+  height: 50px;
+  margin: 30px;
+  background-color: antiquewhite;
+}
+*{
+ font-size:100%;
+}
+legend{
+    font-weight: bolder;
+}
+fieldset{
+    padding: 20px;
+    width: 650px;
+    background-color: aliceblue;
+}
+.buton{
+    font-weight: bold;
+}
+.naslov_narudba{
+  font-size: xx-large;
+}
 @media only screen and (max-width: 600px) {
   .nav_traka{
     width: 50%;
@@ -89,10 +113,72 @@ img{
       <a href="Naslovna.html">O nama</a>
       <a href="Usluge.html">Usluge</a>
       <a href="Galerija.html">Galerija</a>
-      <a class="active"  href="Kontakt.html">Kontakt</a>
+      <a class="active"  href="Kontakt.html">Naruđba</a>
     </div>
   </div><br>
+<!-- Forma -->
+<h1 class="naslov_narudba">Naruđba</h1>
+    <form>
+    <fieldset>
+   <legend>Osobni podatci</legend>
+   <label for="Fname">Ime i prezime:</label><br>
+   <input type="text" id="Fname" name="fname"><br><br>
 
+   <label for="adresa">Adresa (ulica, mjesto, točan poštanski broj):</label><br>
+   <input type="text" id="adresa" name="Adresa"><br><br>
+
+   <label for="Broj">Broj mobitela:</label><br>
+   <input type="tel" id="Broj" name="broj"><br>
+</fieldset>
+<fieldset>
+    <legend>Podatci o naruđbi</legend>
+<label class="buton" for="preuzimanjE">Preuzimate li naruđbu:</label><br>
+  <input type="radio" id="preuzimanjE" name="OdNas" value="OdNas">
+  <label for="preuzimanje">Od nas</label><br>
+  <input type="radio" id="preuzimanje" name="Posta" value="Posta">
+  <label for="preuzimanje">Poštom</label><br><br>
+
+<label class="buton" for="Placanje">Način plaćanja:</label><br>
+  <input type="radio" id="Placanje" name="placanje" value="Poduzece">
+  <label for="Placanje">Poduzećem</label><br>
+  <input type="radio" id="PlacanjE" name="placanje" value="Rn">
+  <label for="PlacanjE">Uplata na rn obrta</label><br><br>
+
+<label class="buton" for="Dostava">Dostava:</label><br>
+  <input type="radio" id="Dostava" name="dostava" value="Obicna">
+  <label for="Dostava">Dostava obična (3-5 radnih dana) 5€</label><br>
+  <input type="radio" id="dostava_brza" name="dostava" value="Brza">
+  <label for="dostava_brza">Brza dostava (unutar 48h radni dani) 7€</label><br>
+  <input type="radio" id="dostava_paketomat" name="dostava" value="Paketomat">
+  <label for="dostava_paketomat">Paketomat (2-4 radna dana) 2,64€</label><br>
+<p>*dostava za visoke balone sa sadržajem je uvijek 7€ neovisno o roku dostave</p><br><br>
+
+  <label for="Napomena">Opis naruđbe:</label><br>
+  <textarea name="napomena" id="Napomena" rows="4" cols="50"></textarea><br><br>
+</fieldset>
+    <input class="button" type="submit" id="Slanje" name="slanje">
+    <input class="button" type="reset" id="Reset" name="reset">
+</form>
+
+<!-- Žalba -->
+ <h1 class="naslov_narudba">Žalba</h1>
+    <form>
+    <fieldset>
+   <legend>Žalba</legend>
+   <label for="fName">Ime i prezime:</label><br>
+   <input type="text" id="fName" name="fname"><br><br>
+
+   <label for="kontakt">Kontakt (bilo koji)</label><br>
+   <input type="text" id="kontakt" name="Kontakt"><br><br>
+
+   <label for="NApomena">Napomena:</label><br>
+  <textarea name="napomena" id="NApomena" rows="4" cols="50"></textarea><br><br>
+  <p>*Ako ne ispunite kontakt nećemo vam moći odgovoriti na žalbu</p>
+</fieldset>
+  <input class="button" type="submit" id="SLanje" name="slanje">
+  <input class="button" type="reset" id="REset" name="reset">
+    </form>
+<!-- podatci -->
   <div class="container">
     <div class="opis">
       <p>BubbleIT, obrt za proizvodnju i usluge, vl. Alojzije Mirković</p>
