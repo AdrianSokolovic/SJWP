@@ -33,7 +33,7 @@ body{
   margin-left: 0;
 }
 .nav_traka a:hover {
-  background-color: #ddd;
+  font-size: 20px;
   color: black;
 }
 .nav_traka a.active {
@@ -52,13 +52,22 @@ body{
   font-size:50px;
   flex: 1 1 30%;
 }
+@media only screen and (max-width: 600px) {
+  img{
+    width: 400px;
+  }
+  .nav_traka{
+    width: 50%;
+    margin-top: 30px;
+  }
+  }
 </style>
 </head>
 <body>
   <div class="topnav">
     <h1 class="naslov">BubbleIT</h1>
     <div class="nav_traka">
-      <a href="Naslovna.html">Naslovna</a>
+      <a href="Naslovna.html">O nama</a>
       <a class="active" href="Usluge.html">Usluge</a>
       <a href="Galerija.html">Galerija</a>
       <a href="Kontakt.html">Kontakt</a>

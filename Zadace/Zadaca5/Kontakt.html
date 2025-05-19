@@ -33,7 +33,7 @@ body{
   margin-left: 0;
 }
 .nav_traka a:hover {
-  background-color: #ddd;
+  font-size: 20px;
   color: black;
 }
 .nav_traka a.active {
@@ -52,20 +52,59 @@ body{
   font-size:50px;
   flex: 1 1 30%;
 }
+/*Stranica*/
+.container{
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto auto auto;
+}
+.opis{
+  font-size: large;
+  margin-top: 50px;
+}
+img{
+  width: 80px;
+  height: auto;
+}
+.flex{
+  display: flex;
+  align-items: center;
+  width: 200px;
+}
+.Facebook{
+  height: 60px;
+}
+@media only screen and (max-width: 600px) {
+  .nav_traka{
+    width: 50%;
+    margin-top: 30px;
+  }
+  }
 </style>
 </head>
 <body>
   <div class="topnav">
     <h1 class="naslov">BubbleIT</h1>
     <div class="nav_traka">
-      <a href="Naslovna.html">Naslovna</a>
+      <a href="Naslovna.html">O nama</a>
       <a href="Usluge.html">Usluge</a>
       <a href="Galerija.html">Galerija</a>
       <a class="active"  href="Kontakt.html">Kontakt</a>
     </div>
   </div><br>
 
-  <p>Mail: bubbleithr@gmail.com</p>
-  <p>Instagram: bubbleit.hr</p>
+  <div class="container">
+    <div class="opis">
+      <p>BubbleIT, obrt za proizvodnju i usluge, vl. Alojzije Mirković</p>
+      <p>Bebrina 122, BEBRINA</p>
+      <p>MB:98424041</p>
+      <p>Djelatnost:3299, Ostala prerađivačka industrija, d. n.</p>
+    </div>
+    <div class="flex">
+    <img src="email.png" alt="Email"><p>Mail: bubbleithr@gmail.com</p>
+  </div>
+  <div class="flex"><img src="Instagram.png" alt="Instagram"><p>Instagram: bubbleit.hr</p></div>
+  </div>
+  <div class="flex"><img class="Facebook" src="Facebook_Logo.png" alt="Facebook"><p>Facebook: Bubbleit</p></div>
 </body>
 </html>
