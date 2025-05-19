@@ -9,6 +9,11 @@
     <style>
 *{
   font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  align-items: center;
+  text-align: center;
+}
+ol{
+  text-align: center;
 }
 body{
   margin: 20px;
@@ -51,11 +56,29 @@ body{
   margin: 0 20px 0 10px;
   font-size:50px;
   flex: 1 1 30%;
+  text-align: left;
 }
-@media only screen and (max-width: 600px) {
-  img{
-    width: 400px;
+.container{
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: auto auto auto;
+  gap: 5px;
+  border: 1px solid gray;
+}
+.container > div{
+  padding: 10px;
+}
+  hr {
+    height: 1px;
+    width: 100%;
+    background: black;
+    border: none;
   }
+  img{
+    width: 35px;
+    height: auto;
+  }
+@media only screen and (max-width: 600px) {
   .nav_traka{
     width: 50%;
     margin-top: 30px;
@@ -73,5 +96,50 @@ body{
       <a href="Kontakt.html">Kontakt</a>
     </div>
   </div><br>
+
+  <div class="container">
+    <div>
+      <img src="slike/box.png" alt="box">
+    <h4>KAKO BI NARUČILI POTREBNO JE:</h4>
+    <ol>
+      <li>Jasno u jednoj poruci definirati što sve želite i kako želite da izgleda</li><br>
+      <li>Ostaviti podatke za slanje: <br>- ime prezime <br>-adresu (ulica, mjesto, točan poštanski broj) <br>-BROJ MOBITELA</li><br>
+      <li>Ukoliko preuzimate proizvod od nas točno naglasiti da želite preuzimanje i da potvrđujete narudžbu te ostaviti ime prezime i broj mobitela</li><br>
+    </ol>
+<p>*ukoliko nešto od ovoga nije ispoštovano zadržavamo pravo na moguća kašnjenja i odstupanja</p>
+    </div>
+    <div>
+    <h4>TRAJNOST BALONA</h4>
+    <img src="slike/balloon.png" alt="balloon">
+    <p>Balon je izrađen je od posebnog pvc materijala i samim time je dugotrajan. Do sada je zabilježeno da mogu stajati godinama.</p>
+    <p>Balon se može ispustiti i puno ranije ukoliko ga nešto ošteti, ukoliko ne pazite, ukoliko stoji na pretoplom/ prehladnom i sl.</p>
+    <p>npr: 1. Balon je stajao 3 dana u pošti jer niste stigli podići (naravno da će ispustiti jer ga premještaju, bacaju i sl) 2. Nosili ste poklone sa zabave i sve ste nagurali u auto (naravno da će ispustiti jer je naguran i tko zna što ga može oštetiti)</p>
+    <p>*obzirom na navedeno baš kao i da ste kupili pravi buket traje koliko ga očuvate</p>
+  </div>
+    <div>
+<h4>U slučaju oštećenja u dostavi:</h4>
+<img src="slike/broken_glass.png" alt="broken_glass">
+<p>- šaljemo novi proizvod u roku 48h (radni dani) ili vraćamo novac od buketa (za dostavu i povrate paketa ne vršimo povrat novca jer je u pitanju treća strana)</p>
+<p>*imajte na umu da je u pitanju balon i da su moguća oštećenja te da kupnjom proizvoda pristajete na sve navedeno iako stavljamo naglasak da su nam svi proizvodi koje šaljemo jako dobro osigurani</p>
+    </div>
+    <div>
+<h4><img src="slike/money.png" alt="money">Dostupni načini plaćanja:</h4><ol>
+  <li>Pouzećem (imajte na umu da dostava naplaćuje naknadu za plaćanje pouzećem što nije naš trošak već njihov- iznose naknade možete provjeriti na stranici dostavne službe PAKET24 koju možete posjetiti <a href="https://www.posta.hr/">OVDJE</a>.)</li>
+  <li>Uplata na rn obrta (paket stiže na adresu te nema nikakvih plaćanja dostavi)</li></ol>
+<p>* Ukoliko balone preuzimate u Sl.Brodu, Zagrebu ili Osijeku jedini mogući način plaćanja je na rn obrta.</p>
+</div>
+    <div>
+  <h4>DOSTAVA <img src="slike/truck.png" alt="pacage truck"></h4>
+<p>Dostava obična je 3-5 radnih dana 5€</p>
+<p>Brza dostava unutar 48h radni dani 7€</p>
+<p>I paketomat 2,64€ 2-4 radna dana</p>
+<p>*dostava za visoke balone sa sadržajem je uvijek 7€ neovisno o roku dostave</p>
+    </div>
+    <div>
+<h4>ROK IZRADE <img src="slike/envelope.png" alt="envelope"></h4>
+<p>Svi naši proizvodi se izrađuju prema narudžbi u potpunosti prilagođeno vašim željama (nemamo gotovih proizvoda).</p>
+<p>Upravo iz tog razloga je potrebno napisati za kada vam određeni proizvod treba kako bi provjerili mogućnost izrade (nema univerzalnog roka izrade).</p>
+    </div>
+  </div>
 </body>
 </html>
